@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+group 'me.simonjs'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.spongepowered.org/maven' }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.Minestom:Minestom:6e185c718e'
+}
